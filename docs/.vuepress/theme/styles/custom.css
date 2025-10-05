@@ -1,0 +1,232 @@
+:root {
+  /** 主题颜色 */
+
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #60a5fa;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.15);
+
+  /** 背景颜色 */
+
+  /*
+  --vp-c-bg: #fff;
+  --vp-c-bg-alt: #f6f6f7;
+  --vp-c-bg-elv: #fff;
+  --vp-c-bg-soft: #f6f6f7;
+  */
+
+  /** 文本颜色 */
+
+  /*
+  --vp-c-text-1: rgba(60, 60, 67);
+  --vp-c-text-2: rgba(60, 60, 67, 0.78);
+  --vp-c-text-3: rgba(60, 60, 67, 0.56);
+  */
+
+  /** 响应式字体大小 */
+  --vp-font-size-xs: clamp(0.75rem, 1vw, 0.875rem);
+  --vp-font-size-sm: clamp(0.875rem, 1.2vw, 1rem);
+  --vp-font-size-base: clamp(1rem, 1.5vw, 1.125rem);
+  --vp-font-size-lg: clamp(1.125rem, 2vw, 1.25rem);
+  --vp-font-size-xl: clamp(1.25rem, 2.5vw, 1.5rem);
+  --vp-font-size-2xl: clamp(1.5rem, 3vw, 2rem);
+  --vp-font-size-3xl: clamp(1.5rem, 3.5vw, 2rem);
+  --vp-font-size-4xl: clamp(2rem, 4.5vw, 2.5rem);
+  --vp-font-size-5xl: clamp(2.5rem, 5.5vw, 3.5rem);
+  --vp-font-size-6xl: clamp(3.5rem, 7vw, 4.5rem);
+}
+
+/* 隐藏面包屑导航 */
+.breadcrumbs {
+  display: none !important;
+}
+
+/* 针对plume主题可能的面包屑选择器 */
+.breadcrumb,
+.plume-breadcrumb,
+.vp-breadcrumb {
+  display: none !important;
+}
+
+/* 应用响应式字体大小到hero区域 */
+
+/* article元素鼠标悬停放大效果 */
+article.box {
+  transition: transform 0.3s ease;
+}
+
+article.box:hover {
+  transform: scale(1.03);
+}
+
+/* article内灰色小字样式 */
+article.box .details {
+  color: #888;
+  font-size: var(--vp-font-size-sm);
+  margin-top: 8px;
+  opacity: 0.8;
+}
+.hero {
+  --hero-name-font-size: var(--vp-font-size-5xl);
+  --hero-tagline-font-size: var(--vp-font-size-3xl);
+  --hero-text-font-size: var(--vp-font-size-base);
+}
+
+/* 响应式调整hero区域的元素 */
+.hero-name {
+  font-size: var(--vp-font-size-5xl) !important;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+  font-size: var(--vp-font-size-3xl) !important;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: var(--vp-font-size-base) !important;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+/* 响应式调整特性区域 */
+.features {
+  padding: 2rem 0;
+}
+
+.feature-title {
+  font-size: var(--vp-font-size-xl) !important;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: var(--vp-font-size-sm) !important;
+  line-height: 1.5;
+}
+
+/* 响应式调整按钮 */
+.hero-actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-actions a {
+  flex: 1 1 200px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* 响应式调整内容区域 */
+.content {
+  font-size: var(--vp-font-size-base);
+  line-height: 1.6;
+}
+
+.content h1 {
+  font-size: var(--vp-font-size-4xl) !important;
+}
+
+.content h2 {
+  font-size: var(--vp-font-size-3xl) !important;
+}
+
+.content h3 {
+  font-size: var(--vp-font-size-2xl) !important;
+}
+
+.content h4 {
+  font-size: var(--vp-font-size-xl) !important;
+}
+
+.content h5 {
+  font-size: var(--vp-font-size-lg) !important;
+}
+
+.content h6 {
+  font-size: var(--vp-font-size-base) !important;
+}
+
+/* 响应式调整图片展示区域 */
+.showcase-screenshots {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.showcase-screenshot {
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+/* 响应式调整布局 */
+.container {
+  padding: 0 1rem;
+}
+
+/* 针对不同断点的进一步优化 */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: var(--vp-font-size-4xl) !important;
+  }
+  
+  .hero-tagline {
+    font-size: var(--vp-font-size-2xl) !important;
+  }
+  
+  .content h1 {
+    font-size: var(--vp-font-size-3xl) !important;
+  }
+  
+  .content h2 {
+    font-size: var(--vp-font-size-2xl) !important;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: var(--vp-font-size-3xl) !important;
+  }
+  
+  .hero-tagline {
+    font-size: var(--vp-font-size-xl) !important;
+  }
+  
+  .content h1 {
+    font-size: var(--vp-font-size-2xl) !important;
+  }
+  
+  .content h2 {
+    font-size: var(--vp-font-size-xl) !important;
+  }
+  
+  .hero-actions a {
+    flex: 1 1 100%;
+  }
+}
+
+/** 深色模式 */
+[data-theme="dark"] {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.25);
+
+  /*
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+  */
+
+  /*
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-2: rgba(235, 235, 245, 0.6);
+  --vp-c-text-3: rgba(235, 235, 245, 0.38);
+  */
+}

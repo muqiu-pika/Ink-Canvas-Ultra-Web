@@ -5,7 +5,7 @@ permalink: /article/getting-started/
 ---
 # 🚀 快速入门
 
-感谢您选择 Ink Canvas Ultra！本页采用更清晰的“模块化导览”样式，便于快速找到安装、使用、配置与排障内容（页面风格参考 OpenList 文档的结构设计）。
+感谢您选择 Ink Canvas Ultra！本页采用更清晰的"模块化导览"样式，便于快速找到安装、使用、配置与排障内容。
 
 ## 📋 目录
 

@@ -125,6 +125,26 @@ export default defineUserConfig({
             { text: '⌨️ 全局快捷键', link: '/guide/hotkeys.md#⌨️-全局快捷键' },
             { text: '💡 使用建议', link: '/guide/hotkeys.md#💡-使用建议' }
           ]
+        },
+        {
+          text: '🚀 高级功能与技巧',
+          link: '/guide/advanced-features.md',
+          items: [
+            { text: '🎯 智能墨迹识别', link: '/guide/advanced-features.md#🎯-智能墨迹识别' },
+            { text: '🎨 高级绘图功能', link: '/guide/advanced-features.md#🎨-高级绘图功能' },
+            { text: '✋ 手势操作进阶', link: '/guide/advanced-features.md#✋-手势操作进阶' }
+          ]
+        },
+        {
+          text: '🙏 特别鸣谢',
+          link: '/guide/acknowledgments.md',
+          items: [
+            { text: '🧑‍💻 开发者', link: '/guide/acknowledgments.md#🧑‍💻-ink-canvas-ultra-开发者' },
+            { text: '🤝 贡献者', link: '/guide/acknowledgments.md#🤝-ink-canvas-ultra-贡献者' },
+            { text: '🔗 上游项目开发者', link: '/guide/acknowledgments.md#🔗-上游项目开发者' },
+            { text: '🔗 上游项目', link: '/guide/acknowledgments.md#🔗-上游项目' },
+            { text: '💖 原项目贡献者', link: '/guide/acknowledgments.md#💖-原项目贡献者' }
+          ]
         }
       ]
     },

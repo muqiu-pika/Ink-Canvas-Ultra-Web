@@ -10,7 +10,7 @@ export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/', icon: 'material-symbols:home' },
   { text: '指南', link: '/guide/getting-started.md', icon: 'material-symbols:explore' },
   { text: '功能', link: '/guide/features.md', icon: 'material-symbols:checklist' },
-  { text: '高级功能', link: '/guide/advanced-features.md', icon: 'material-symbols:rocket-launch' },
+  { text: '更新日志', link: '/article/changelog/', icon: 'material-symbols:history' },
   { text: '特别鸣谢', link: '/guide/acknowledgments.md', icon: 'material-symbols:favorite' },
   { text: '下载', link: 'https://github.com/muqiu-pika/Ink-Canvas-Ultra/releases', icon: 'material-symbols:download' },
   { text: '源码', link: 'https://github.com/muqiu-pika/Ink-Canvas-Ultra', icon: 'ri:github-fill' },

@@ -70,6 +70,8 @@ permalink: /article/getting-started/
 - 自动保存：幻灯片模式下的墨迹自动保存至 `文档\\Ink Canvas Strokes`
 - 手动保存：点击保存按钮，导出当前所有墨迹
 - 截图：点击相机图标，截图自动保存至 `图片\\Ink Canvas Screenshots`
+- 截屏：按 `Alt+C` 启动区域截屏，可选择插入到画板、保存到文件夹或加入照片列表
+- 粘贴图片：在放映/白板模式下按 `Ctrl+V` 粘贴剪贴板图片
 
 ---
 

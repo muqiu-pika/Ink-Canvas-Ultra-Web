@@ -82,6 +82,8 @@ export default defineUserConfig({
             { text: '✋ 手势控制', link: '/guide/features.md#✋-手势控制' },
             { text: '🤖 自动化功能', link: '/guide/features.md#🤖-自动化功能' },
             { text: '🔧 实用辅助功能', link: '/guide/features.md#🔧-实用辅助功能' },
+            { text: '📽️ 视频展台', link: '/guide/features.md#📽️-视频展台' },
+            { text: '📸 截屏功能', link: '/guide/features.md#📸-截屏功能' },
             { text: '⚡ 性能优化', link: '/guide/features.md#⚡-性能优化' },
             { text: '🔌 兼容性与扩展性', link: '/guide/features.md#🔌-兼容性与扩展性' },
             { text: '💡 使用技巧', link: '/guide/features.md#💡-使用技巧' }
@@ -95,6 +97,7 @@ export default defineUserConfig({
             { text: '🎨 外观', link: '/guide/settings.md#🎨-外观-appearance' },
             { text: '🤖 自动化', link: '/guide/settings.md#🤖-自动化-automation' },
             { text: '🖼️ 画布', link: '/guide/settings.md#🖼️-画布-canvas' },
+            { text: '📽️ 视频展台', link: '/guide/settings.md#📽️-视频展台-videopresenter' },
             { text: '✋ 手势', link: '/guide/settings.md#✋-手势-gesture' },
             { text: '🔺 墨迹转形', link: '/guide/settings.md#🔺-墨迹转形-inktoshape' },
             { text: '📽️ PowerPoint', link: '/guide/settings.md#📽️-powerpoint-powerpointsettings' },
@@ -132,7 +135,8 @@ export default defineUserConfig({
           items: [
             { text: '🎯 智能墨迹识别', link: '/guide/advanced-features.md#🎯-智能墨迹识别' },
             { text: '🎨 高级绘图功能', link: '/guide/advanced-features.md#🎨-高级绘图功能' },
-            { text: '✋ 手势操作进阶', link: '/guide/advanced-features.md#✋-手势操作进阶' }
+            { text: '✋ 手势操作进阶', link: '/guide/advanced-features.md#✋-手势操作进阶' },
+            { text: '💾 数据管理与迁移', link: '/guide/advanced-features.md#💾-数据管理与迁移' }
           ]
         },
         {

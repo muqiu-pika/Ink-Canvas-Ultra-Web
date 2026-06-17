@@ -9,11 +9,20 @@ Frequently used hotkeys and tips to improve efficiency.
 
 ## Global Hotkeys
 
-- `Alt+V` Show/Hide the floating toolbar
-- `Alt+B` Enter/Exit whiteboard
-- `Alt+C` Clear screen
-- `Alt+S` Screenshot
-- `Ctrl+Z` Undo
+- `Ctrl + Z` —— Undo
+- `Ctrl + Y` —— Redo
+- `Ctrl + E` —— Clear screen
+- `Ctrl + V` —— Paste clipboard image (in slideshow/whiteboard mode)
+- `Ctrl + Shift + V` —— Global paste
+- `Alt + C` —— Screenshot (Capture)
+- `Alt + V` —— Show/Hide the floating toolbar (Visibility)
+- `Alt + D` —— Switch to annotation mode / Show or close palette (Draw)
+- `Alt + Q` —— Quit annotation mode (Quit)
+- `Alt + B` —— Enter/Exit whiteboard (Board)
+- `Alt + S` —— Switch to selection mode (Select)
+- `Alt + E` —— Switch to area eraser/stroke eraser (Eraser)
+- `Alt + L` —— Switch to single line drawing mode (Line)
+- `Shift + Esc` —— Exit PPT slideshow
 
 > Refer to the “Operating Guide” window for the complete list; theme-aware.
 

@@ -12,6 +12,8 @@ permalink: /article/hotkeys/
 - `Ctrl + Z` —— 撤销
 - `Ctrl + Y` —— 重做
 - `Ctrl + E` —— 清屏
+- `Ctrl + V` —— 粘贴剪贴板图片（放映/白板模式下）
+- `Ctrl + Shift + V` —— 全局粘贴
 - `Alt + C` —— 截屏（Capture）
 - `Alt + V` —— 显示/隐藏 笑脸右侧工具栏（Visibility）
 - `Alt + D` —— 切换至批注模式 / 显示或关闭调色板（Draw）

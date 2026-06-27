@@ -26,6 +26,12 @@ Common issues and solutions to help you quickly diagnose and fix problems.
 
 - Confirm auto-save strategy and write permissions of target path; check disk space
 
+## Settings not applied / lost after restart
+
+- Ensure you are running V7.0.3 or later; older versions silently fail to save settings when installed to administrator-only directories such as `Program Files`
+- Newer versions write `Settings.json` to `%APPDATA%\Ink Canvas\` (always writable by the current user) and automatically migrate legacy config files
+- If the issue persists, exit the app, back up and delete `%APPDATA%\Ink Canvas\Settings.json`, then relaunch to rebuild default settings
+
 ## Log file too large
 
 - The app auto-cleans `Log.txt` when it grows too large; you can delete it manually and restart

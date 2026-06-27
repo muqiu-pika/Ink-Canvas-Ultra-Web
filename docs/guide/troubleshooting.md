@@ -26,6 +26,12 @@ permalink: /article/troubleshooting/
 
 - 检查自动保存策略与目标路径是否可写，确认磁盘空间充足
 
+## ⚙️ 设置修改后不生效 / 重启后丢失
+
+- 确认使用的是 V7.0.3 及以上版本，旧版本在安装到 `Program Files` 等需管理员权限的目录时设置会静默保存失败
+- 新版本将 `Settings.json` 统一写入 `%APPDATA%\Ink Canvas\`（当前用户始终可写），并自动迁移旧版本遗留的配置文件
+- 若仍异常，可尝试退出应用后备份并删除 `%APPDATA%\Ink Canvas\Settings.json`，重新启动应用以重建默认配置
+
 ## 📊 日志文件过大
 
 - 应用会在日志过大时自动清理 `Log.txt`；必要时手动删除并重启

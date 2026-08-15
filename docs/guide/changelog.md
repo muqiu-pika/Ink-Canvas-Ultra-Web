@@ -5,7 +5,77 @@ permalink: /article/changelog/
 ---
 # 更新日志
 
-## 最新版本：7.0.4
+## 最新版本：8.0.2
+
+### V8.0.2
+- 进一步减小软件体积：修复插件打包逻辑、使用无 V8/XFA 的 pdfium
+- 移除内置文档转照片插件，改为插件工坊在线下载安装
+- 适配插件工坊到新市场接口
+  - 在线目录改为多源回退：EdgeOne / Cloudflare Pages / jsDelivr
+  - 下载支持 downloadUrl + fallbackUrl 双源
+  - 安装前校验文件大小与 SHA256
+  - 已安装插件支持在线更新检测并显示「更新」按钮
+  - 扩展 OnlinePluginCatalog 数据模型以支持 market、checksum 等字段
+- 移除 Cloudflare 回退，保留 EdgeOne + jsDelivr 市场源
+- 插件工坊在线安装增加进度条
+  - 新增安装进度遮罩（下载、校验、安装阶段）
+  - 下载时实时显示进度百分比与已下载/总大小
+  - 校验阶段显示文件大小与 SHA256 校验进度
+  - 安装完成/失败均有状态提示
+- 修复照片侧栏底部按钮显示并给导入文档加边框
+  - 底部按钮区域改用 WrapPanel，按钮宽度从 80 调整为 76，避免溢出
+  - 底部 Grid 改为 MinHeight 自适应，防止窗口较小时被截断
+  - 导入文档按钮添加 BorderBrush/BorderThickness=1 边框
+- 修改了部分功能的图标
+- 修复一些问题
+  - 任务栏图标修复
+  - 插件安装时自动创建桌面快捷方式（仅限"视频展台"插件）
+  - 安装包不再默认创建视频展台桌面快捷方式
+  - GitHub Actions 产物 ZIP 不再包含 VBS 快捷方式
+- 添加功能，优化软件
+  - 添加导入文档转为照片到画板（插件）
+  - 优化软件流畅度，降低软件内存占用
+- 修复一些问题
+  - 修复 GitHub Actions 的编译错误，.NET 安装步骤从只装 6.0.x 改为同时装 6.0.x 和 10.0.x
+  - 修复墨迹识别开关不一致的问题
+- 修改 Github Actions 编译环境
+- 修改部分内容：增加写入频率，减少内容丢失率
+- 进行一些改动
+  - 确保「重置设置」和「推荐设置」相同
+  - 修改笔锋为默认关闭
+- 调整默认设置：将文件默认保存位置改为【文档】
+
+#### Ink-Canvas-Ultra-Plugin 更新（跟随 V8.0.2）
+- b5f5928 Initial commit
+- b16b821 添加插件规范、示例模板与 visualpresenter 安装包
+- bc372d2 添加 videocontrols、documenttoimage 插件源码与安装包，更新 README
+- 4032d1b 添加在线插件商店目录 plugins.json
+- 858b1ce 部署插件市场到 EdgeOne
+- ce1e0a4 改为 EdgeOne Pages 手动仓库部署
+- c919a65 文档转照片（documenttoimage）插件版本号更新至 3.1.0
+
+### V8.0.1
+- 新增手写板防护机制
+- 添加插件系统
+  - 新增插件工坊窗口（PluginWorkshopWindow），支持从本地安装 .icplugin 包
+  - 新增插件 API（IPlugin/IPluginHost/PluginHost/PluginManifest/PluginEntryPoint）
+  - LogHelper.LogType 枚举补充 Warning，修复 CS0117
+  - IPluginHost.Log 使用公开的 PluginLogLevel 枚举，避免 internal 访问边界问题
+  - 视频展台功能抽取为独立 plugin（visualpresenter），未安装时不显示相关按钮
+  - .icplugin 安装包为 ZIP 格式，解压到 Plugins\<包名>\ 子目录，含清单校验
+  - 插件工坊单例窗口，从设置进入时自动关闭设置，右下角提供返回设置/关闭按钮
+  - 设置页面中插件工坊入口位于启动选项与画布之间
+  - 新增 Ink-Canvas-Ultra-Plugin 目录：README 规范、visualpresenter 示例源码与打包脚本
+  - .gitignore 补充 **/bin/、**/obj/、*.user
+- 修复 CS1739：.NET Framework 4.7.2 的 ExtractToDirectory 不支持 overwriteFiles 参数
+- 调整从设置进入插件工坊的窗口行为
+- 将插件资料迁移至独立仓库 Ink-Canvas-Ultra-Plugin
+- 添加插件工坊；添加对视频展台，视频控制插件的适配
+- 将白板模式下的插入媒体移动到侧栏中，不再直接插入到画板中
+- 长按照片列表中的照片，可以选择移动/删除该照片；拖动照片列表中的照片到画板，可直接将照片插入到当前画板中
+- 修复小问题：缩短照片列表长按时长；修复触摸失效的问题
+- 在白板模式下添加 word，excel，pdf 文件的导入（转成照片）
+- 更新软件版本号为 V8.0.1，并优化减小软件体积
 
 ### V7.0.4
 - 更新软件版本号为 V7.0.4

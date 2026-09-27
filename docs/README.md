@@ -8,7 +8,7 @@ config:
       name: 🎨 Ink Canvas Ultra
       text: 轻量级高性能电子白板软件
       tagline: 教学演示好帮手，启动快，占用少
-      image: /images/Ink%20Canvas%20Ultra.png
+      image: /icu.svg
       actions:
         -
           theme: brand

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./image/Ink Canvas Ultra.png" style="width:96px;"/>
+<img src="./image/icu.svg" style="width:96px;"/>
 
 # Ink Canvas Ultra
 [![UPSTREAM](https://img.shields.io/badge/UpStream-WXRIW%2FInk--Canvas-red.svg "LICENSE")](https://github.com/WXRIW/Ink-Canvas)

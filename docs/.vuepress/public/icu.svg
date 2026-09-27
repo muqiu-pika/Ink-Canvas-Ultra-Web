@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 蓝色背景渐变 -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD" />
+      <stop offset="55%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    
+    <!-- 笔杆渐变 -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF09A" />
+      <stop offset="45%" stop-color="#FACC15" />
+      <stop offset="100%" stop-color="#E0A800" />
+    </linearGradient>
+    
+    <!-- 金属箍渐变 -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3F4F6" />
+      <stop offset="50%" stop-color="#B0B8C4" />
+      <stop offset="100%" stop-color="#8A94A0" />
+    </linearGradient>
+    
+    <!-- 橡皮擦渐变 -->
+    <linearGradient id="eraserGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBCFE8" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    
+    <!-- 木质笔头渐变 -->
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#F5D98B" />
+    </linearGradient>
+    
+    <!-- 背景阴影 -->
+    <filter id="boardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="8" stdDeviation="10" flood-color="#1E3A8A" flood-opacity="0.28" />
+    </filter>
+  </defs>
+
+  <!-- 整体缩放组：以画布中心为基准，将底板和铅笔一起放大1.25倍，确保整体不超出边框 -->
+  <g transform="translate(128, 128) scale(1.25) translate(-128, -129.38)">
+    
+    <!-- 蓝色渐变圆角底板 -->
+    <rect x="42" y="72" width="172" height="112" rx="20" fill="url(#boardGrad)" filter="url(#boardShadow)" />
+    <rect x="42.5" y="72.5" width="171" height="111" rx="19.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5" />
+
+    <!-- 铅笔图标 -->
+    <g transform="translate(128, 128) rotate(-225) scale(3.9) translate(-16, 0)">
+      <!-- 橡皮擦 -->
+      <rect x="-9" y="-4.5" width="9" height="9" rx="2.2" fill="url(#eraserGrad)" />
+      
+      <!-- 笔杆 -->
+      <path d="M 0,-4.5 L 28,-4.5 L 28,4.5 L 0,4.5 Q -1,4.5 -1,3.4 L -1,-3.4 Q -1,-4.5 0,-4.5 Z" fill="url(#bodyGrad)" />
+      <path d="M 1,-3.2 L 27,-3.2" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="0.9" stroke-linecap="round" />
+      
+      <!-- 金属箍 -->
+      <rect x="28" y="-4.5" width="3.5" height="9" rx="0" fill="url(#metalGrad)" />
+      
+      <!-- 木质笔头 -->
+      <polygon points="31.5,-4.5 42,0 31.5,4.5" fill="url(#woodGrad)" />
+      
+      <!-- 石墨笔尖 -->
+      <polygon points="38.6,-1.43 42,0 38.6,1.43" fill="#374151" />
+    </g>
+    
+  </g>
+</svg>

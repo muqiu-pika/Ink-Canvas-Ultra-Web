@@ -26,7 +26,8 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/images/Ink%20Canvas%20Ultra.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/icu.svg' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/icu.ico' }],
   ],
 
   bundler: viteBundler(),

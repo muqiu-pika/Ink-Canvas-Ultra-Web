@@ -18,7 +18,7 @@ import { zhNotes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: '/images/Ink%20Canvas%20Ultra.png',
+  logo: '/icu.svg',
 
   appearance: true,  // 配置 深色模式
 
@@ -58,7 +58,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: '/images/Ink%20Canvas%20Ultra.png',
+        avatar: '/icu.svg',
         name: 'Ink Canvas Ultra',
         description: '轻量级高性能电子白板软件',
         // circle: true,

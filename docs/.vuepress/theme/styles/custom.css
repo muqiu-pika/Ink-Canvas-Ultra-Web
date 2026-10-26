@@ -1,29 +1,9 @@
 :root {
-  /** 主题颜色 */
-
   --vp-c-brand-1: #2563eb;
   --vp-c-brand-2: #3b82f6;
   --vp-c-brand-3: #60a5fa;
   --vp-c-brand-soft: rgba(59, 130, 246, 0.15);
 
-  /** 背景颜色 */
-
-  /*
-  --vp-c-bg: #fff;
-  --vp-c-bg-alt: #f6f6f7;
-  --vp-c-bg-elv: #fff;
-  --vp-c-bg-soft: #f6f6f7;
-  */
-
-  /** 文本颜色 */
-
-  /*
-  --vp-c-text-1: rgba(60, 60, 67);
-  --vp-c-text-2: rgba(60, 60, 67, 0.78);
-  --vp-c-text-3: rgba(60, 60, 67, 0.56);
-  */
-
-  /** 响应式字体大小 */
   --vp-font-size-xs: clamp(0.75rem, 1vw, 0.875rem);
   --vp-font-size-sm: clamp(0.875rem, 1.2vw, 1rem);
   --vp-font-size-base: clamp(1rem, 1.5vw, 1.125rem);
@@ -210,23 +190,9 @@ article.box .details {
   }
 }
 
-/** 深色模式 */
 [data-theme="dark"] {
   --vp-c-brand-1: #60a5fa;
   --vp-c-brand-2: #3b82f6;
   --vp-c-brand-3: #2563eb;
   --vp-c-brand-soft: rgba(59, 130, 246, 0.25);
-
-  /*
-  --vp-c-bg: #1b1b1f;
-  --vp-c-bg-alt: #161618;
-  --vp-c-bg-elv: #202127;
-  --vp-c-bg-soft: #202127;
-  */
-
-  /*
-  --vp-c-text-1: rgba(255, 255, 245, 0.86);
-  --vp-c-text-2: rgba(235, 235, 245, 0.6);
-  --vp-c-text-3: rgba(235, 235, 245, 0.38);
-  */
 }

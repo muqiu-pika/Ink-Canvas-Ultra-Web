@@ -119,13 +119,7 @@ export default defineUserConfig({
         },
         {
           text: '🧩 插件开发手册',
-          link: '/guide/plugin-development.md',
-          items: [
-            { text: '📁 目录结构', link: '/guide/plugin-development.md#📁-目录结构' },
-            { text: '🚪 声明式入口点', link: '/guide/plugin-development.md#🚪-声明式入口点' },
-            { text: '🔌 IPluginHost API', link: '/guide/plugin-development.md#🔌-ipluginhost-api' },
-            { text: '📦 打包与分发', link: '/guide/plugin-development.md#📦-打包与分发' }
-          ]
+          link: '/guide/plugin-development.md'
         },
         {
           text: '🙏 特别鸣谢',
